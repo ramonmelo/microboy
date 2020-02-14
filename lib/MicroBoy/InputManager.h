@@ -4,9 +4,19 @@
 
 namespace microboy
 {
+enum Action
+{
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT,
+	ACTION,
+	NONE
+};
+
 class InputManager
 {
 public:
-	int read();
+	Action read();
 };
 } // namespace microboy
